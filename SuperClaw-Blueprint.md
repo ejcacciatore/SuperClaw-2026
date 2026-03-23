@@ -158,6 +158,13 @@ It is the **body** that never sleeps.
 **SuperClaw** is **not** a separate product.  
 **SuperClaw = OpenClaw + entire Top 20 stack wired together via MCP + hierarchical supervision + self-improvement loop.**
 
+### The Agentic Architect Roles
+SuperClaw's architecture operates on the Agentic Ecosystem paradigm, distributing cognitive labor across 4 specialized entities:
+1. **Master Planner (Orchestrator):** The OpenClaw core supervisor. It decomposes goals, routes tasks to sub-agents via the Model Router, and manages system memory.
+2. **Knowledge Agents:** The Hybrid Memory Core (Pinecone, Obsidian, NotebookLM). They handle semantic retrieval, ground the planner's reasoning, and synthesize complex project data.
+3. **Skills Agents:** The Tooling Hub (Composio, GitHub MCP, Supabase, Puppeteer). These are role-specific experts that execute functional commands within sandboxed limits.
+4. **Tandem Agents:** The Sequential Thinking and Self-Improvement loop. They act as "Generator-Critic" peers to evaluate safety, fix code, and perform Tellius root-cause analysis.
+
 ### Layered Architecture (Mermaid)
 
 ```mermaid

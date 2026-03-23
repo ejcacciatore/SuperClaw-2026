@@ -2,14 +2,17 @@
 
 *Extracted from the 2026 Super AI Agent Architecture Blueprint.*
 
-## Core Philosophy
+## Core Philosophy (The Agentic Architect)
 
-*   **One persistent body**: OpenClaw (Tool 3) running in Docker on a VPS or homelab server.
+Surpassing single-model thinking, SuperClaw operates as a collaborative ecosystem with 4 distinct roles:
+1.  **Master Planner (OpenClaw)**: The strategic brain. Decomposes goals, routes tasks, and manages system state.
+2.  **Knowledge Agents**: The system's memory and perception (Pinecone, Obsidian, NotebookLM). They ground reasoning in semantic facts.
+3.  **Skills Agents**: The muscles (Composio, GitHub MCP, Puppeteer). Narrow, highly capable experts executing real-world API commands in sandboxes.
+4.  **Tandem Agents**: "Generator-Critic" peers running in collaborative swarms (Sequential Thinking) for self-correction.
+
 *   **MCP as nervous system**: Every capability is discovered and invoked dynamically—no hard-coded APIs.
-*   **Hierarchical multi-agent system (MAS)**: One supervisor delegates to specialized sub-agents.
-*   **Hybrid memory**: Short-term vector speed + lifelong structured knowledge + project-grounded silos.
-*   **Model router**: The agent intelligently routes every sub-task to the optimal foundation model.
-*   **Closed-loop self-improvement**: Every completed workflow is reflected upon, debugged, and versioned.
+*   **Model router**: The Master Planner intelligently routes every sub-task to the optimal foundation model.
+*   **Closed-loop self-improvement**: Every completed workflow is reflected upon by Tandem Agents, debugged, and versioned.
 
 ## Layered Architecture (MCP-Centric)
 

@@ -2,26 +2,26 @@
 
 *Extracted from the 2026 Super AI Agent Architecture Blueprint.*
 
-## Core Implementation Skills
+## Core Implementation Skills (Agentic Ecosystem)
 
-### Supervisor & Model Router
+### 1. Master Planner (Supervisor & Model Router)
 *   Extend OpenClaw with a custom MCP server: `superclow-router`.
-*   Maintain a capability matrix for routing (e.g., “code execution → Claude Code”).
-*   Use Sequential Thinking MCP to decompose tasks before routing.
+*   Maintain a capability matrix for routing logic (e.g., “code execution → Claude Code”).
+*   Use Sequential Thinking MCP to decompose complex tasks before delegating to sub-agents.
 
-### Memory Core Integration
-*   Index notes, workflows, and embeddings in Pinecone/Milvus.
-*   Use Obsidian with Smart Connections + Copilot for Git-backed lifelong vault.
-*   Auto-create NotebookLM projects for new initiatives; sync back to Obsidian via MCP bridge.
+### 2. Knowledge Agents (Memory Core Integration)
+*   Index notes, workflows, and embeddings in Pinecone/Milvus for fast semantic retrieval.
+*   Use Obsidian with Smart Connections + Copilot for Git-backed lifelong knowledge synthesis.
+*   Auto-create NotebookLM projects for new initiatives; sync back to Obsidian via MCP bridge to ground all agent reasoning.
 
-### Action & Tooling Hub
-*   Utilize Composio MCP + individual domain MCP servers (Supabase, GitHub, Puppeteer, etc.).
-*   Auto-generate missing REST endpoints using DreamFactory.
+### 3. Skills Agents (Action & Tooling Hub)
+*   Utilize Composio MCP + individual domain MCP servers (Supabase, GitHub, Puppeteer, etc.) as narrow executor "muscles."
+*   Auto-generate missing REST endpoints using DreamFactory in sandboxed operations.
 *   Auto-test endpoints using Tusk Drift.
 
-### Self-Improvement Loop (Crucial Skill)
-After every workflow:
-1.  Critique performance using Sequential Thinking MCP.
+### 4. Tandem Agents (Self-Improvement Loop)
+Run peer-to-peer reflection loops after every workflow:
+1.  Critique performance using Sequential Thinking MCP (Maker-Checker loop).
 2.  Perform root-cause analysis on failures via Tellius.
 3.  Generate improved prompts or new sub-agent skills via Claude Code.
 4.  Commit changes via GitHub MCP and restart sub-agent.
