@@ -1,0 +1,6 @@
+*.zip
+node_modules/
+.DS_Store
+.env
+data_dump.md
+Knowledge_mcp.MD

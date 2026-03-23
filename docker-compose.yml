@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  superclaw:
+    image: openclaw/superclaw:latest
+    container_name: superclaw
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./obsidian-vault:/root/.obsidian
+      - ./superclaw-data:/data
+    environment:
+      - MCP_SERVERS=supabase,github,puppeteer,composio,pinecone,sequential-thinking
+      - LLM_ROUTER_ENABLED=true
+    restart: unless-stopped
+  pinecone-local:
+    image: pinecone/pinecone-local:latest
+    ports:
+      - "5000:5000"
